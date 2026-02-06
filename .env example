@@ -1,6 +1,5 @@
 APP_NAME=hospitalproject
 APP_ENV=local
-APP_KEY=base64:WDbVF2DgO+Yu6h/CeDy6CVo4ENtwly43BYaYKLA6BDw=
 APP_DEBUG=true
 APP_URL=http://localhost
 
@@ -31,10 +30,10 @@ REDIS_PORT=6379
 MAIL_MAILER=smtp
 MAIL_HOST=mail.info.com
 MAIL_PORT=587
-MAIL_USERNAME=info@gmail.com
+MAIL_USERNAME=example@gmail.com
 MAIL_PASSWORD=password123
 MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS=info@gmail.com
+MAIL_FROM_ADDRESS=example@gmail.com
 MAIL_FROM_NAME="dweapps"
 
 AWS_ACCESS_KEY_ID=
