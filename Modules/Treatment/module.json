@@ -1,0 +1,11 @@
+{
+    "name": "Treatment",
+    "alias": "treatment",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Treatment\\Providers\\TreatmentServiceProvider"
+    ],
+    "files": []
+}

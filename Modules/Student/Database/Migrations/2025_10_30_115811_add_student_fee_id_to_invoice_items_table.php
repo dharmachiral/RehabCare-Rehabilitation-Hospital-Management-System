@@ -1,0 +1,28 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+   public function up()
+{
+    Schema::table('invoice_items', function (Blueprint $table) {
+        $table->unsignedBigInteger('student_fee_id')->nullable()->after('invoice_id');
+        $table->foreign('student_fee_id')->references('id')->on('student_fees')->onDelete('cascade');
+    });
+}
+
+public function down()
+{
+    Schema::table('invoice_items', function (Blueprint $table) {
+        $table->dropForeign(['student_fee_id']);
+        $table->dropColumn('student_fee_id');
+    });
+}
+
+};
